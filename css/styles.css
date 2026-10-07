@@ -1,0 +1,57 @@
+.logo {
+    width: 82px;
+    height: 82px;
+    border-radius: 82px;
+}
+
+nav {
+    height: 90px;
+    display: flex;
+    padding: 0 45px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+nav h3 {
+    display: flex;
+    width: 415px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Kalnia;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 1px 3px 0 #C18326;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #EBB447;
+    text-align: center;
+    font-family: Kalnia;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
