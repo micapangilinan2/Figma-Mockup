@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    min-height: 100vh;
     background-image: url("../bg_img/home-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -27,58 +25,52 @@ body::before {
 }
 
 .intro h1 {
-    flex-direction: column;
-    justify-content: center;
+    margin-bottom: 0;
     color: #FFF;
     text-align: center;
-    font-family: Kalnia;
-    font-size: 100px;
-    font-style: normal;
+    font-family: "Kalnia", sans-serif;
+    font-size: 70px;
     font-weight: 400;
+    font-style: normal;
     line-height: normal;
     text-shadow: 0 4.5px 0 #C18326;
 }
 
 .intro h2 {
+    margin-top: 0;
     color: #EBB447;
     text-align: center;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #8F4714;
-    font-family: Kalnia;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.intro p {
-    display: flex;
-    width: 726px;
-    height: 114px;
-    flex-direction: column;
-    justify-content: center;
-    color: #F3EEE6;
-    text-align: center;
-    font-family: "Hedvig Letters Sans";
+    font-family: "Kalnia", sans-serif;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
+.intro p {
+    color: #F3EEE6;
+    text-align: center;
+    font-family: "Hedvig Letters Sans";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+}
 
-body > a {
+.button {
     display: block;
-    width: 190px;
-    margin: 25px auto 0;
+    width: 200px;
+    margin: auto;
     padding: 15px 20px;
     box-sizing: border-box;
-    background-color: white;
-    color: #5b432d;
+    background-color: #ffffff;
+    color: #3C2B11;
     text-align: center;
     text-decoration: none;
+    font-family: "Kalnia", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 40px;
 }
 

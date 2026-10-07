@@ -12,6 +12,7 @@ nav {
     justify-content: space-between;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
 nav a {
@@ -19,6 +20,7 @@ nav a {
     align-items: center;
     color: white;
     text-decoration: none;
+    
 }
 
 
@@ -30,7 +32,7 @@ nav h3 {
     justify-content: center;
     color: #FFF;
     text-align: center;
-    font-family: Kalnia;
+    font-family: "Kalnia", sans-serif;
     font-size: 55px;
     font-style: normal;
     font-weight: 400;
@@ -53,5 +55,6 @@ nav ul li a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-decoration: none;
 }
 
