@@ -59,3 +59,17 @@ nav ul li a {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .slider-container {
+        height: auto;
+        overflow-y: auto;
+    }
+    .history-slide {
+        flex: 0 0 92%;
+        height: auto;
+    }
+    .slide-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
