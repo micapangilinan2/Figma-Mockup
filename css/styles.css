@@ -41,6 +41,7 @@ nav h3 {
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     gap: 40px;
     margin: 0;
