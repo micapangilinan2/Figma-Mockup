@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARTSTYLES</title>
-    <link rel="stylesheet" href="artstyles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/artstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <div class="nav-banner">
+        <nav>
         <a href="home.html">
             <img class="logo" src="bg_img/logo.png" alt="Chromatica Logo">
             <h3>Chromatica</h3>
@@ -18,216 +26,221 @@
             <li><a href="artists.html">ARTISTS</a></li>
             <li><a href="artstyles.html">ARTSTYLES</a></li>
         </ul>
-    </nav>
+        </nav>
+    </div>
 
     <h2>VARIOUS ART STYLES THAT HAVE DEVELOPED IN YEARS</h2>
     <span class="swipe-hint">← Swipe left</span>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Abstract Expressionism</h2>
-            <ul class="info-list">
-            <li>Emerged back in the 1940-1950's.</li>
-            <li>It is expressed through expressive brush strokes or large, flat areas of single color.</li>
-            <li>Abstract Expressionism can also be used to express emotions through an artist's brush stroke.</li>
-            </ul>
-        </div>
+    <div class="slider-container">
+        <section class="art-slide" id="abstract-expressionism">
+            <div class="card-info">
+                <h2>Abstract Expressionism</h2>
+                <ul class="info-list">
+                <li>Emerged back in the 1940-1950's.</li>
+                <li>It is expressed through expressive brush strokes or large, flat areas of single color.</li>
+                <li>Abstract Expressionism can also be used to express emotions through an artist's brush stroke.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-            <li>Wassily Kandinsky, <em>Composition X</em>, 1939. Courtesy of <a href="https://www.wassilykandinsky.net/work-62.php" target="_blank">wassilykandinsky.net</a></li>
-            <li>Helen Frankenthaler, <em>Mountains and Sea</em>, 1952. Courtesy of <a href="https://www.guggenheim-bilbao.eus/en/exhibitions/after-mountains-and-sea-frankenthaler-1956-1959" target="_blank">Guggenheim Bilbao</a></li>
-            <li>Amy Donaldson, <em>Breakthrough</em>. Courtesy of <a href="https://www.artworkarchive.com/profile/amy-donaldson/artwork/breakthrough--13" target="_blank">artworkarchive.com</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                <li>Wassily Kandinsky, <em>Composition X</em>, 1939. Courtesy of <a href="https://www.wassilykandinsky.net/work-62.php" target="_blank">wassilykandinsky.net</a></li>
+                <li>Helen Frankenthaler, <em>Mountains and Sea</em>, 1952. Courtesy of <a href="https://www.guggenheim-bilbao.eus/en/exhibitions/after-mountains-and-sea-frankenthaler-1956-1959" target="_blank">Guggenheim Bilbao</a></li>
+                <li>Amy Donaldson, <em>Breakthrough</em>. Courtesy of <a href="https://www.artworkarchive.com/profile/amy-donaldson/artwork/breakthrough--13" target="_blank">artworkarchive.com</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Geometric Art</h2>
-            <ul class="info-list">
-                <li>The ancient Greek Period formally began around 900 BC, whereas Geometric Abstraction emerged in the year 1915.</li>
-                <li>This artform are created through points, lines, angles, and different shapes.</li>
-                <li>Shapes that are used may sometimes require mathematical precision.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="geometric-art">
+            <div class="card-info">
+                <h2>Geometric Art</h2>
+                <ul class="info-list">
+                    <li>The ancient Greek Period formally began around 900 BC, whereas Geometric Abstraction emerged in the year 1915.</li>
+                    <li>This artform are created through points, lines, angles, and different shapes.</li>
+                    <li>Shapes that are used may sometimes require mathematical precision.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Josef Albers, <em>Homage to the Square</em>, 1969. Courtesy of <a href="https://www.guggenheim.org/artwork/173" target="_blank">Guggenheim New York</a></li>
-                <li>Josef Albers, <em>Memento</em>, 1943. Courtesy of <a href="https://www.guggenheim.org/artwork/163" target="_blank">Guggenheim New York</a></li>
-                <li>Sarah Morris, <em>Midtown Paintings</em>, 1998-2001. Courtesy of <a href="https://www.guggenheim.org/artwork/163" target="_blank">Petzel Gallery</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Josef Albers, <em>Homage to the Square</em>, 1969. Courtesy of <a href="https://www.guggenheim.org/artwork/173" target="_blank">Guggenheim New York</a></li>
+                    <li>Josef Albers, <em>Memento</em>, 1943. Courtesy of <a href="https://www.guggenheim.org/artwork/163" target="_blank">Guggenheim New York</a></li>
+                    <li>Sarah Morris, <em>Midtown Paintings</em>, 1998-2001. Courtesy of <a href="https://www.guggenheim.org/artwork/163" target="_blank">Petzel Gallery</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Figurative Art</h2>
-            <ul class="info-list">
-                <li>Figurative Art has existed way back in the Paleolithic era, and has evolved since to this day.</li>
-                <li>The 14th-17th century, specifically the Renaissance represents the peak of art in the history of figurative art.</li>
-                <li>This art style is focused on humans, animals, and objects that are actual sources.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="figurative-art">
+            <div class="card-info">
+                <h2>Figurative Art</h2>
+                <ul class="info-list">
+                    <li>Figurative Art has existed way back in the Paleolithic era, and has evolved since to this day.</li>
+                    <li>The 14th-17th century, specifically the Renaissance represents the peak of art in the history of figurative art.</li>
+                    <li>This art style is focused on humans, animals, and objects that are actual sources.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Pablo Picasso, <em>The Three Dancers</em>, 1925. Courtesy of <a href="https://www.tate.org.uk/art/artworks/picasso-the-three-dancers-t00729" target="_blank">Tate</a></li>
-                <li>Claude Monet, <em>Woman with a Parasol - Madame Monet and Her Son</em>, 1875. Courtesy of <a href="https://www.claude-monet.com/woman-with-a-parasol.jsp" target="_blank">claude-monet.com</a></li>
-                <li>Lucian Freud, <em>Standing by the Rags</em>, 1988-8. Courtesy of <a href="https://www.tate.org.uk/art/artworks/freud-standing-by-the-rags-t05722" target="_blank">Tate</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Pablo Picasso, <em>The Three Dancers</em>, 1925. Courtesy of <a href="https://www.tate.org.uk/art/artworks/picasso-the-three-dancers-t00729" target="_blank">Tate</a></li>
+                    <li>Claude Monet, <em>Woman with a Parasol - Madame Monet and Her Son</em>, 1875. Courtesy of <a href="https://www.claude-monet.com/woman-with-a-parasol.jsp" target="_blank">claude-monet.com</a></li>
+                    <li>Lucian Freud, <em>Standing by the Rags</em>, 1988-8. Courtesy of <a href="https://www.tate.org.uk/art/artworks/freud-standing-by-the-rags-t05722" target="_blank">Tate</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Minimalist Art</h2>
-            <ul class="info-list">
-                <li>Originated back in the late 1950-1960’s.</li>
-                <li>Minimalist arts are usually emphasized that art should only refer to itself.</li>
-                <li>It is focused purely on its physical components. Frank Stella had emphasized this by saying “What you see is what you see”.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="minimalist-art">
+            <div class="card-info">
+                <h2>Minimalist Art</h2>
+                <ul class="info-list">
+                    <li>Originated back in the late 1950-1960’s.</li>
+                    <li>Minimalist arts are usually emphasized that art should only refer to itself.</li>
+                    <li>It is focused purely on its physical components. Frank Stella had emphasized this by saying “What you see is what you see”.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Robert Morris, <em>Untitled (Mirrored Cube)</em>, 1965. Courtesy of <a href="https://www.pamm.org/en/artwork/2014.172a-d" target="_blank">Perez Art Museum Miami</a> </li>
-                <li>Dan Flavin, <em>“monument” for V. Tatlin</em>, 1964. Courtesy of <a href="https://www.tate.org.uk/art/artists/dan-flavin-1101" target="_blank">Tate</a></li>
-                <li>Tony Smith, <em>Free Ride</em>, 1962-1968. Courtesy of <a href="https://www.slam.org/collection/objects/8215/" target="_blank">Saint Louis Art Museum</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Robert Morris, <em>Untitled (Mirrored Cube)</em>, 1965. Courtesy of <a href="https://www.pamm.org/en/artwork/2014.172a-d" target="_blank">Perez Art Museum Miami</a> </li>
+                    <li>Dan Flavin, <em>“monument” for V. Tatlin</em>, 1964. Courtesy of <a href="https://www.tate.org.uk/art/artists/dan-flavin-1101" target="_blank">Tate</a></li>
+                    <li>Tony Smith, <em>Free Ride</em>, 1962-1968. Courtesy of <a href="https://www.slam.org/collection/objects/8215/" target="_blank">Saint Louis Art Museum</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Pop Art</h2>
-            <ul class="info-list">
-                <li>Reached its peak in the year 1960.</li>
-                <li>Artists used imagery from advertisements, comic books, product packaging, and media to create art.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="pop-art">
+            <div class="card-info">
+                <h2>Pop Art</h2>
+                <ul class="info-list">
+                    <li>Reached its peak in the year 1960.</li>
+                    <li>Artists used imagery from advertisements, comic books, product packaging, and media to create art.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Richard Hamilton, <em>Just what is it that makes today's homes so different, so appealing?</em>, 1956. Courtesy of <a href="https://en.wikipedia.org/wiki/Just_what_is_it_that_makes_today's_homes_so_different,_so_appealing%3F" target="_blank">Wikipedia</a></li.>
-                <li>Deborah Kass, <em>Jewish Jackie</em>, 1992. Courtesy of <a href="https://www.moma.org/collection/works/60016?sov_referrer=art_term&art_term_slug=pop-art" target="_blank">MoMA</a></li>
-                <li>James Rosenquist, <em>F-111</em>, 1964-65. Courtesy of <a href="https://www.moma.org/collection/works/79805?sov_referrer=art_term&art_term_slug=pop-art" target="_blank">MoMA</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Richard Hamilton, <em>Just what is it that makes today's homes so different, so appealing?</em>, 1956. Courtesy of <a href="https://en.wikipedia.org/wiki/Just_what_is_it_that_makes_today's_homes_so_different,_so_appealing%3F" target="_blank">Wikipedia</a></li.>
+                    <li>Deborah Kass, <em>Jewish Jackie</em>, 1992. Courtesy of <a href="https://www.moma.org/collection/works/60016?sov_referrer=art_term&art_term_slug=pop-art" target="_blank">MoMA</a></li>
+                    <li>James Rosenquist, <em>F-111</em>, 1964-65. Courtesy of <a href="https://www.moma.org/collection/works/79805?sov_referrer=art_term&art_term_slug=pop-art" target="_blank">MoMA</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Surrealism</h2>
-            <ul class="info-list">
-                <li>Began in 1920’s.</li>
-                <li>Often interpreted dreams and memories through imagery, creating alternate realities that defined logical thought.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="surrealism">
+            <div class="card-info">
+                <h2>Surrealism</h2>
+                <ul class="info-list">
+                    <li>Began in 1920’s.</li>
+                    <li>Often interpreted dreams and memories through imagery, creating alternate realities that defined logical thought.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Rene Magritte, <em>The Treachery of Images</em>, 1929. Courtesy of <a href="https://www.renemagritte.org/the-treachery-of-images.jsp" target="_blank">renemagritte.org</a></li>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Rene Magritte, <em>The Treachery of Images</em>, 1929. Courtesy of <a href="https://www.renemagritte.org/the-treachery-of-images.jsp" target="_blank">renemagritte.org</a></li>
 
-                <li>Andre Masson, <em>Automatic Drawing</em>, 1924. Courtesy of <a href="https://www.moma.org/collection/works/38201" target="_blank">MoMA</a></li>
+                    <li>Andre Masson, <em>Automatic Drawing</em>, 1924. Courtesy of <a href="https://www.moma.org/collection/works/38201" target="_blank">MoMA</a></li>
 
-                <li>Dorothea Tanning,<em>The Girl</em>, 1950. Courtesy of <a href="https://www.tate.org.uk/art/artworks/tanning-the-girl-t15419" target="_blank">Tate</a></li>
-            </ul>
-        </div>
-    </section>
+                    <li>Dorothea Tanning,<em>The Girl</em>, 1950. Courtesy of <a href="https://www.tate.org.uk/art/artworks/tanning-the-girl-t15419" target="_blank">Tate</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Impressionism</h2>
-            <ul class="info-list">
-                <li>Was a 19th century art movement.</li>
-                <li>This art style originated on an exhibition in France, which featured famous artists.</li>
-                <li>Their artworks, with the implication of being “unfinished” coined the term of Impressionism.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="impressionism">
+            <div class="card-info">
+                <h2>Impressionism</h2>
+                <ul class="info-list">
+                    <li>Was a 19th century art movement.</li>
+                    <li>This art style originated on an exhibition in France, which featured famous artists.</li>
+                    <li>Their artworks, with the implication of being “unfinished” coined the term of Impressionism.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Bato Dugarzhapov, <em>Breakfast on a grass</em>, Courtesy of <a href="https://gerrie-thefriendlyghost.blogspot.com/2011/01/bato-durgazhapov-beyond-claude-monet.html" target="_blank">The Linausaurus</a></li>
-                <li>Claude Monet, <em>Impression, Sunrise</em>, 1872. Courtesy of <a href="https://en.wikipedia.org/wiki/Impression,_Sunrise" target="_blank">wikipedia.org</a></li>
-                <li>Edouard Manet, <em>Le Déjeuner sur l'herbe (The Luncheon on the Grass)</em>, 1863. Courtesy of <a href="https://www.manet.org/luncheon-on-the-grass.jsp" target="_blank">manet.org</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Bato Dugarzhapov, <em>Breakfast on a grass</em>, Courtesy of <a href="https://gerrie-thefriendlyghost.blogspot.com/2011/01/bato-durgazhapov-beyond-claude-monet.html" target="_blank">The Linausaurus</a></li>
+                    <li>Claude Monet, <em>Impression, Sunrise</em>, 1872. Courtesy of <a href="https://en.wikipedia.org/wiki/Impression,_Sunrise" target="_blank">wikipedia.org</a></li>
+                    <li>Edouard Manet, <em>Le Déjeuner sur l'herbe (The Luncheon on the Grass)</em>, 1863. Courtesy of <a href="https://www.manet.org/luncheon-on-the-grass.jsp" target="_blank">manet.org</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Cubism</h2>
-            <ul class="info-list">
-                <li>Emerged in the early 20th century in Paris.</li>
-                <li>Has three components: geometricity, simultaneity of multiple perspectives, and exploring a “fourth dimension”.</li>
-                <li>This art has become the starting point for many abstract styles.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="cubism">
+            <div class="card-info">
+                <h2>Cubism</h2>
+                <ul class="info-list">
+                    <li>Emerged in the early 20th century in Paris.</li>
+                    <li>Has three components: geometricity, simultaneity of multiple perspectives, and exploring a “fourth dimension”.</li>
+                    <li>This art has become the starting point for many abstract styles.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Pablo Picasso, <em>Girl with a Mandolin</em>, 1910. Courtesy of <a href="https://en.wikipedia.org/wiki/Girl_with_a_Mandolin" target="_blank">Wikipedia</a></li>
-                <li>Georges Braque, <em>Mandora</em>, 1909-10. Courtesy of <a href="https://www.tate.org.uk/art/artworks/braque-mandora-t00833" target="_blank">Tate</a></li>
-                <li>Roger de la Fresnaye, <em>Artillery</em>, 1911. Courtesy of <a href="https://www.metmuseum.org/art/collection/search/485807">The Metropolitan Museum of Art</a></li>
-            </ul>
-        </div>
-    </section>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Pablo Picasso, <em>Girl with a Mandolin</em>, 1910. Courtesy of <a href="https://en.wikipedia.org/wiki/Girl_with_a_Mandolin" target="_blank">Wikipedia</a></li>
+                    <li>Georges Braque, <em>Mandora</em>, 1909-10. Courtesy of <a href="https://www.tate.org.uk/art/artworks/braque-mandora-t00833" target="_blank">Tate</a></li>
+                    <li>Roger de la Fresnaye, <em>Artillery</em>, 1911. Courtesy of <a href="https://www.metmuseum.org/art/collection/search/485807">The Metropolitan Museum of Art</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Text-based Art</h2>
-            <ul class="info-list">
-                <li>Became popular in the 1960’s.</li>
-                <li>This type of art blends written words with visual designs to create meaning, often conveying messages with deep meanings.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="text-based">
+            <div class="card-info">
+                <h2>Text-based Art</h2>
+                <ul class="info-list">
+                    <li>Became popular in the 1960’s.</li>
+                    <li>This type of art blends written words with visual designs to create meaning, often conveying messages with deep meanings.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Robert Indiana, <em>Decade: Autoportrait</em>, 1969. Courtesy of <a href="https://clarendonfineart.com/en-us/products/decade-autoportrait-1969?srsltid=AfmBOoooRtfQ4L6BBI6APRXEyJHp1Pp4mNrsZUN4SQtHuor9sRiYXx-i" target="_blank">Clarendon Fine Art</a></li>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Robert Indiana, <em>Decade: Autoportrait</em>, 1969. Courtesy of <a href="https://clarendonfineart.com/en-us/products/decade-autoportrait-1969?srsltid=AfmBOoooRtfQ4L6BBI6APRXEyJHp1Pp4mNrsZUN4SQtHuor9sRiYXx-i" target="_blank">Clarendon Fine Art</a></li>
 
-                <li>Barbara Kruger, <em>Untitled (Your body is a battleground)</em>, 1989. Courtesy of <a href="https://www.nga.gov/artworks/230973-untitled-your-body-battleground" target="_blank">National Gallery of Art</a></li>
+                    <li>Barbara Kruger, <em>Untitled (Your body is a battleground)</em>, 1989. Courtesy of <a href="https://www.nga.gov/artworks/230973-untitled-your-body-battleground" target="_blank">National Gallery of Art</a></li>
 
-                <li>Tracey Emin, <em>This is Another Place</em>, 2007. Courtesy of <a href="https://www.sothebys.com/en/buy/auction/2024/modern-contemporary-day-auction/this-is-another-place" target="_blank">Sotheby’s</a></li>
-            </ul>
-        </div>
-    </section>
+                    <li>Tracey Emin, <em>This is Another Place</em>, 2007. Courtesy of <a href="https://www.sothebys.com/en/buy/auction/2024/modern-contemporary-day-auction/this-is-another-place" target="_blank">Sotheby’s</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="art-slide">
-        <div class="card-info">
-            <h2>Hyperrealism</h2>
-            <ul class="info-list">
-                <li>Also called “superrealism”.</li>
-                <li>Hyperrealism shows artworks that are like high-resolution photography.</li>
-                <li>Artists make detailed works, that may also express emotions or narratives.</li>
-            </ul>
-        </div>
+        <section class="art-slide" id="hyperrealism">
+            <div class="card-info">
+                <h2>Hyperrealism</h2>
+                <ul class="info-list">
+                    <li>Also called “superrealism”.</li>
+                    <li>Hyperrealism shows artworks that are like high-resolution photography.</li>
+                    <li>Artists make detailed works, that may also express emotions or narratives.</li>
+                </ul>
+            </div>
 
-        <div class="card-examples bg-abstract">
-            <h3>Examples:</h3>
-            <ul class="example-list">
-                <li>Charles bell, <em>Circus Act</em>, 1994. Courtesy of <a href="https://www.artsy.net/artwork/charles-bell-circus-act" target="_blank">Artsy</a></li>
+            <div class="card-examples">
+                <h3>Examples:</h3>
+                <ul class="example-list">
+                    <li>Charles bell, <em>Circus Act</em>, 1994. Courtesy of <a href="https://www.artsy.net/artwork/charles-bell-circus-act" target="_blank">Artsy</a></li>
 
-                <li>Nataliya Bagatskaya, <em>Still life in hyperrealism "Just Tender Peaches..."</em>, 2021. Courtesy of <a href="https://theartling.com/en/artwork/nataliya-bagatskaya-still-life-in-hyperrealism-just-tender-peaches/?srsltid=AfmBOoo21gyA4-0zrGEOniV6eMS7Y4GWbg5QwUcv8DERq7ILRotJzr_e" target="_blank">The Artling</a></li>
+                    <li>Nataliya Bagatskaya, <em>Still life in hyperrealism "Just Tender Peaches..."</em>, 2021. Courtesy of <a href="https://theartling.com/en/artwork/nataliya-bagatskaya-still-life-in-hyperrealism-just-tender-peaches/?srsltid=AfmBOoo21gyA4-0zrGEOniV6eMS7Y4GWbg5QwUcv8DERq7ILRotJzr_e" target="_blank">The Artling</a></li>
 
-                <li>Douglas W Newton, <em>Violet and Red</em>, 2021. Courtesy of <a href="https://theartling.com/en/artwork/douglas-w-newton-violet-and-red/" target="_blank">The Artling</a></li>
-            </ul>
-        </div>
-    </section>
+                    <li>Douglas W Newton, <em>Violet and Red</em>, 2021. Courtesy of <a href="https://theartling.com/en/artwork/douglas-w-newton-violet-and-red/" target="_blank">The Artling</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>    
     
     <footer>
         <p>&copy; 2026 Copyright chromatica.com</p>
     </footer>
+
+    <script src="js/slider.js"></script>
 </body>
 </html>

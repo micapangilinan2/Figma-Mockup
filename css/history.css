@@ -52,7 +52,7 @@ p {
     color: #ffffff;
 }
 
-span {
+.swipe-hint {
     display: block;
     width: 100%;
     font-family: "Hedvig Letters Sans", sans-serif;
