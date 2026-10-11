@@ -17,18 +17,18 @@ body::before {
     z-index: -1;
 }
 
-.nav-banner {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    background: rgba(0, 0, 0, 0.40);
-    backdrop-filter: blur(8px);
-}
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     position: relative; 
+}
+
+.nav-banner {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(8px);
 }
 
 h2 {
