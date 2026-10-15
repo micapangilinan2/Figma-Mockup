@@ -21,7 +21,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative; 
 }
 
@@ -32,27 +33,26 @@ html, body {
 }
 
 h2 {
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     text-align: center;
 }
 
 body > p {
-    font-size: 15px;
+    font-size: 13px;
     color: #fff;
     margin-top: 5px;
     text-align: center;
 }
 
 .swipe-hint {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 5px;
-    margin-bottom: 25px;
-    text-align: right;
+    margin-bottom: 15px;
+    text-align: center;
     width: 90%;
-    max-width: 1100px;
 }
 
 .container {
@@ -64,10 +64,9 @@ body > p {
 
 .artist-slide {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: 1fr;
+    gap: 20px;
     width: 90%;
-    max-width: 1100px;
 }
 
 .artist-card {
@@ -79,7 +78,7 @@ body > p {
     flex-direction: column;
     gap: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    height: 100%;             
+    height: auto;             
     box-sizing: border-box;
 }
 
@@ -93,7 +92,7 @@ body > p {
 }
 
 .artist-card img:last-child {
-    margin-top: auto;
+    margin-top: 10px;
     margin-bottom: 2px;
 }
 
@@ -103,15 +102,15 @@ body > p {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 
 .card-info h4 {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: bold;
     margin-bottom: 8px;
     text-align: center;
     color: #1f1f1f;
+    margin-top: 0;
 }
 
 .card-info ul {
@@ -132,4 +131,50 @@ footer {
     text-align: center;
     font-size: 0.85rem;
     color: #9ca3af;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 25px;
+    }
+    body > p {
+        font-size: 14px;
+    }
+    .swipe-hint {
+        text-align: right;
+        max-width: 1100px;
+    }
+    .artist-slide {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1100px;
+    }
+    .artist-card {
+        height: 100%;
+    }
+    .card-info {
+        flex-grow: 1;
+    }
+    .card-info h4 {
+        font-size: 1rem;
+    }
+    .artist-card img:last-child {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    body > p {
+        font-size: 15px;
+    }
+    .artist-slide {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-info h4 {
+        font-size: 1.05rem;
+    }
 }

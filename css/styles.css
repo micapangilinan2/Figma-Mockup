@@ -1,60 +1,154 @@
 .logo {
-    width: 82px;
-    height: 82px;
-    border-radius: 82px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.nav-banner {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1a1512;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 nav {
-    height: 90px;
+    height: auto;
     display: flex;
-    padding: 0 45px;
+    flex-direction: column;
+    padding: 15px;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
     box-sizing: border-box;
     text-decoration: none;
-    
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-nav a {
+nav > a {
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
-    
+    justify-content: center;
+    width: 100%;
 }
-
 
 nav h3 {
     display: flex;
-    width: 415px;
-    height: 100px;
+    width: auto;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     color: #FFF;
     text-align: center;
     font-family: "Kalnia", sans-serif;
-    font-size: 55px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-shadow: 1px 3px 0 #C18326;
+    text-shadow: 1px 2px 0 #C18326;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
     color: #EBB447;
     text-align: center;
     font-family: Kalnia;
-    font-size: 25px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 25px;
+        height: 70px;
+        gap: 20px;
+        align-items: center;
+    }
+    nav > a {
+        width: auto;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    nav h3 {
+        font-size: 26px;
+    }
+    nav ul {
+        width: auto;
+        justify-content: flex-end;
+        gap: 16px;
+        height: 100%;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    nav {
+        padding: 0 30px;
+        height: 80px;
+    }
+    nav h3 {
+        font-size: 36px;
+    }
+    nav ul {
+        gap: 24px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        width: 82px;
+        height: 82px;
+    }
+    nav {
+        height: 90px;
+        padding: 0 45px;
+    }
+    nav h3 {
+        width: 415px;
+        height: 100px;
+        font-size: 55px;
+        text-shadow: 1px 3px 0 #C18326;
+    }
+    nav ul {
+        gap: 40px;
+    }
+    nav ul li a {
+        font-size: 25px;
+    }
 }

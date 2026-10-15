@@ -1,8 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background-image: url("../bg_img/home-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 body::before {
@@ -18,10 +30,13 @@ body::before {
 
 .intro {
     text-align: center;
-    margin-top: 105px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 750px;
+    max-width: 90%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .intro h1 {
@@ -29,21 +44,21 @@ body::before {
     color: #FFF;
     text-align: center;
     font-family: "Kalnia", sans-serif;
-    font-size: 70px;
+    font-size: 36px;
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    text-shadow: 0 4.5px 0 #C18326;
+    text-shadow: 0 2.5px 0 #C18326;
 }
 
 .intro h2 {
-    margin-top: 0;
+    margin-top: 5px;
     color: #EBB447;
     text-align: center;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #8F4714;
     font-family: "Kalnia", sans-serif;
-    font-size: 35px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -53,34 +68,33 @@ body::before {
     color: #F3EEE6;
     text-align: center;
     font-family: "Hedvig Letters Sans";
-    font-size: 25px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.4;
+    margin-bottom: 25px;
 }
 
 .button {
     display: block;
-    width: 200px;
+    width: 160px;
     margin: auto;
-    padding: 15px 20px;
+    padding: 10px 15px;
     box-sizing: border-box;
     background-color: #ffffff;
     color: #3C2B11;
     text-align: center;
     text-decoration: none;
     font-family: "Kalnia", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     border-radius: 40px;
 }
 
-
 footer {
-    position: fixed;
-    bottom: 10px;
-    left: 0;
     width: 100%;
     text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
 }
 
 footer p {
@@ -88,4 +102,50 @@ footer p {
     font-family: Arial, sans-serif;
     font-size: 12px;
     color: white;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin-top: 70px;
+        max-width: 600px;
+    }
+    .intro h1 {
+        font-size: 52px;
+        text-shadow: 0 3.5px 0 #C18326;
+    }
+    .intro h2 {
+        font-size: 26px;
+        -webkit-text-stroke-width: 0.75px;
+    }
+    .intro p {
+        font-size: 20px;
+    }
+    .button {
+        width: 180px;
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro {
+        margin-top: 105px;
+        max-width: 750px;
+    }
+    .intro h1 {
+        font-size: 70px;
+        text-shadow: 0 4.5px 0 #C18326;
+    }
+    .intro h2 {
+        font-size: 35px;
+        -webkit-text-stroke-width: 1px;
+    }
+    .intro p {
+        font-size: 25px;
+    }
+    .button {
+        width: 200px;
+        font-size: 20px;
+        padding: 15px 20px;
+    }
 }
