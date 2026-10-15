@@ -5,8 +5,9 @@
 }
 
 .nav-banner {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: #1a1512;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(8px);
     width: 100%;
     flex-shrink: 0;
     box-sizing: border-box;
@@ -22,8 +23,6 @@ nav {
     box-sizing: border-box;
     text-decoration: none;
     width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 nav > a {
@@ -134,19 +133,32 @@ nav ul li a {
     .logo {
         width: 82px;
         height: 82px;
+        border-radius: 82px;
     }
     nav {
         height: 90px;
         padding: 0 45px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+    }
+    nav > a {
+        width: auto;
+        justify-content: flex-start;
     }
     nav h3 {
         width: 415px;
         height: 100px;
         font-size: 55px;
         text-shadow: 1px 3px 0 #C18326;
+        text-align: center;
     }
     nav ul {
         gap: 40px;
+        width: auto;
+        justify-content: flex-end;
     }
     nav ul li a {
         font-size: 25px;
