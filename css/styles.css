@@ -13,7 +13,8 @@
     box-sizing: border-box;
 }
 
-nav {
+nav {    
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -22,22 +23,22 @@ nav {
     gap: 15px;
     box-sizing: border-box;
     text-decoration: none;
-    width: 100%;
 }
 
-nav > a {
+nav > a {    
+    width: 100%;
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
     justify-content: center;
-    width: 100%;
 }
 
-nav h3 {
-    display: flex;
+nav h3 {    
+    margin: 0;
     width: auto;
     height: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     color: #FFF;
@@ -48,20 +49,18 @@ nav h3 {
     font-weight: 400;
     line-height: normal;
     text-shadow: 1px 2px 0 #C18326;
-    margin: 0;
 }
 
-nav ul {
+nav ul {    
+    width: 100%;
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 
 nav ul li {
@@ -72,38 +71,41 @@ nav ul li {
 nav ul li a {
     color: #EBB447;
     text-align: center;
-    font-family: Kalnia;
+    font-family: "Kalnia", sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
-    white-space: nowrap;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     nav {
-        flex-direction: row;
-        justify-content: space-between;
         padding: 0 25px;
         height: 70px;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
         align-items: center;
     }
+
     nav > a {
-        width: auto;
-        justify-content: flex-start;
+        width: auto;        
         height: 100%;
+        justify-content: flex-start;
     }
+
     nav h3 {
         font-size: 26px;
     }
+
     nav ul {
         width: auto;
+        height: 100%;
         justify-content: flex-end;
         gap: 16px;
-        height: 100%;
     }
+
     nav ul li a {
         font-size: 14px;
     }
@@ -114,16 +116,20 @@ nav ul li a {
         width: 60px;
         height: 60px;
     }
+
     nav {
         padding: 0 30px;
         height: 80px;
     }
+
     nav h3 {
         font-size: 36px;
     }
+
     nav ul {
         gap: 24px;
     }
+
     nav ul li a {
         font-size: 18px;
     }
@@ -135,6 +141,7 @@ nav ul li a {
         height: 82px;
         border-radius: 82px;
     }
+
     nav {
         height: 90px;
         padding: 0 45px;
@@ -144,10 +151,12 @@ nav ul li a {
         max-width: 100%;
         margin: 0;
     }
+
     nav > a {
         width: auto;
         justify-content: flex-start;
     }
+
     nav h3 {
         width: 415px;
         height: 100px;
@@ -155,11 +164,13 @@ nav ul li a {
         text-shadow: 1px 3px 0 #C18326;
         text-align: center;
     }
+
     nav ul {
         gap: 40px;
         width: auto;
         justify-content: flex-end;
     }
+
     nav ul li a {
         font-size: 25px;
     }

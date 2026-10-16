@@ -1,3 +1,12 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative; 
+}
+
 body {
     background-image: url('../bg_img/artists-bg.jpg'); 
     background-size: cover;
@@ -17,19 +26,12 @@ body::before {
     z-index: -1;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: relative; 
-}
-
 .nav-banner {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     background: rgba(0, 0, 0, 0.40);
     backdrop-filter: blur(8px);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -47,38 +49,38 @@ body > p {
 }
 
 .swipe-hint {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 15px;;
     font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-top: 5px;
-    margin-bottom: 15px;
     text-align: center;
-    width: 90%;
 }
 
 .container {
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
 }
 
 .artist-slide {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    width: 90%;
 }
 
 .artist-card {
+    padding: 15px;
+    display: flex;
+    height: auto;  
     background-color: #d8c3a5;
     color: #2b2b2b;
     border-radius: 16px;
-    padding: 15px;
-    display: flex;
     flex-direction: column;
     gap: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    height: auto;             
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);        
     box-sizing: border-box;
 }
 
@@ -97,29 +99,31 @@ body > p {
 }
 
 .card-info {
-    background-color: #e5d3bc;
     padding: 10px;
-    border-radius: 8px;
     display: flex;
+    background-color: #e5d3bc;
+    border-radius: 8px;
     flex-direction: column;
 }
 
 .card-info h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: "Kalnia", sans-serif;
     font-size: 0.95rem;
     font-weight: bold;
-    margin-bottom: 8px;
     text-align: center;
-    color: #1f1f1f;
-    margin-top: 0;
+    color: #472e1b;
 }
 
 .card-info ul {
-    list-style-type: disc;
+    margin-bottom: 0;
     padding-left: 18px;
+    list-style-type: disc;
     font-size: 0.75rem;
     line-height: 1.4;
-    color: #333333;
-    margin-bottom: 0;
+    color: #472e1b;
+    
 }
 
 .card-info ul li {
@@ -138,26 +142,33 @@ footer {
         font-size: 1.4rem;
         margin-top: 25px;
     }
+
     body > p {
         font-size: 14px;
     }
+
     .swipe-hint {
         text-align: right;
         max-width: 1100px;
     }
+
     .artist-slide {
         grid-template-columns: repeat(2, 1fr);
         max-width: 1100px;
     }
+
     .artist-card {
         height: 100%;
     }
+
     .card-info {
         flex-grow: 1;
     }
+
     .card-info h4 {
         font-size: 1rem;
     }
+
     .artist-card img:last-child {
         margin-top: auto;
     }
@@ -168,12 +179,15 @@ footer {
         font-size: 1.5rem;
         margin-top: 30px;
     }
+
     body > p {
         font-size: 15px;
     }
+
     .artist-slide {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .card-info h4 {
         font-size: 1.05rem;
     }

@@ -36,7 +36,6 @@ body::before {
     max-width: 90%;
     padding: 0 15px;
     box-sizing: border-box;
-    flex-grow: 1;
 }
 
 .intro h1 {
@@ -67,7 +66,7 @@ body::before {
 .intro p {
     color: #F3EEE6;
     text-align: center;
-    font-family: "Hedvig Letters Sans";
+    font-family: "Hedvig Letters Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
@@ -99,7 +98,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Hedvig Letters Sans", sans-serif;
     font-size: 12px;
     color: white;
 }
@@ -109,21 +108,25 @@ footer p {
         margin-top: 70px;
         max-width: 600px;
     }
+
     .intro h1 {
         font-size: 52px;
         text-shadow: 0 3.5px 0 #C18326;
     }
+
     .intro h2 {
         font-size: 26px;
         -webkit-text-stroke-width: 0.75px;
     }
+
     .intro p {
         font-size: 20px;
     }
+    
     .button {
         width: 180px;
-        font-size: 18px;
         padding: 12px 18px;
+        font-size: 18px;
     }
 }
 
@@ -132,24 +135,29 @@ footer p {
         height: 100vh;
         overflow: hidden;
     }
+
     .intro {
         margin-top: 105px;
         max-width: 750px;
     }
+
     .intro h1 {
         font-size: 70px;
         text-shadow: 0 4.5px 0 #C18326;
     }
+
     .intro h2 {
         font-size: 35px;
         -webkit-text-stroke-width: 1px;
     }
+
     .intro p {
         font-size: 25px;
     }
+
     .button {
         width: 200px;
-        font-size: 20px;
         padding: 15px 20px;
+        font-size: 20px;
     }
 }

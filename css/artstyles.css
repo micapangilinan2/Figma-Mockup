@@ -30,6 +30,8 @@ html, body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     background: rgba(0, 0, 0, 0.40);
     backdrop-filter: blur(8px);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -86,7 +88,7 @@ h2 {
 }
 
 .card-info h3 {
-    font-family: "Kalnia", serif;
+    font-family: "Kalnia", sans-serif;
     font-size: 1.25rem;
     color: #ffffff;
     margin-top: 5px;
@@ -94,7 +96,6 @@ h2 {
     font-weight: 400;
     text-align: center;
     line-height: 1.2;
-    white-space: normal;
 }
 
 .card-info ul {
@@ -110,18 +111,18 @@ h2 {
 }
 
 .card-examples {
+    padding-bottom: 20px;
     flex: 1;
     position: relative;
     overflow: hidden;
-    padding-bottom: 20px;
 }
 
 .card-examples h3 {
+    margin-top: 15px;
     padding-left: 0;
     font-family: "Kalnia", sans-serif;
     text-align: center;
     font-size: 1.15rem;
-    margin-top: 15px;
 }
 
 .card-examples ul {
@@ -133,18 +134,18 @@ h2 {
 }
 
 .card-examples ul li {
+    margin-bottom: 8px;
     font-size: 0.75rem;
     line-height: 1.4;
-    margin-bottom: 8px;
     color: #fff;
     text-align: left; 
 }
 
 .card-examples li {
-    font-family: "Hedvig Letters Sans", sans-serif;
-    font-size: 13px;
     margin-top: 5px;
     margin-bottom: 10px;
+    font-family: "Hedvig Letters Sans", sans-serif;
+    font-size: 13px;
     color: #ffffff;
     font-weight: 400;
     text-align: center;
@@ -162,25 +163,54 @@ h2 {
     background-repeat: no-repeat;
 }
 
-#abstract-expressionism { background-image: url(../artstyles_img/abstract.jpg); }
-#geometric-art { background-image: url(../artstyles_img/geometric.jpg); }
-#figurative-art { background-image: url(../artstyles_img/figurative.jpg); }
-#minimalist-art { background-image: url(../artstyles_img/minimalist.jpg); }
-#pop-art { background-image: url(../artstyles_img/pop.jpg); }
-#surrealism { background-image: url(../artstyles_img/surrealism.jpg); }
-#impressionism { background-image: url(../artstyles_img/impressionism.jpg); }
-#cubism { background-image: url(../artstyles_img/cubism.jpg); }
-#text-based { background-image: url(../artstyles_img/text-based.jpg); }
-#hyperrealism { background-image: url(../artstyles_img/hyperrealism.jpg); }
+#abstract-expressionism { 
+    background-image: url(../artstyles_img/abstract.jpg); 
+}
+
+#geometric-art { 
+    background-image: url(../artstyles_img/geometric.jpg); 
+}
+
+#figurative-art { 
+    background-image: url(../artstyles_img/figurative.jpg); 
+}
+
+#minimalist-art { 
+    background-image: url(../artstyles_img/minimalist.jpg); 
+}
+
+#pop-art { 
+    background-image: url(../artstyles_img/pop.jpg); 
+}
+
+#surrealism { 
+    background-image: url(../artstyles_img/surrealism.jpg); 
+}
+
+#impressionism { 
+    background-image: url(../artstyles_img/impressionism.jpg); 
+}
+
+#cubism { 
+    background-image: url(../artstyles_img/cubism.jpg); 
+}
+
+#text-based { 
+    background-image: url(../artstyles_img/text-based.jpg); 
+}
+
+#hyperrealism { 
+    background-image: url(../artstyles_img/hyperrealism.jpg); 
+}
 
 footer {
+    width: 100%;
     position: relative;
+    padding: 15px 0;
     bottom: 0;
     left: 0;
     transform: none;
-    width: 100%;
     text-align: center;
-    padding: 15px 0;
 }
 
 footer p {
@@ -190,42 +220,48 @@ footer p {
 }
 
 @media (min-width: 768px) {
+    html, body {
+        overflow: hidden;
+    }
+
     h2 {
         font-size: 1.3rem;
         margin: 25px 0 5px 30px;
         text-align: left;
     }
+
     .swipe-hint {
-        text-align: right;
         padding-right: 30px;
         margin-bottom: 10px;
+        text-align: right;
     }
-    html, body {
-        overflow: hidden;
-    }
+
     .slider-container {
-        flex-direction: row;
+        padding: 0 30px 20px 30px;
         height: 70vh;
+        flex-direction: row;
         overflow-x: auto;
         overflow-y: hidden;
-        padding: 0 30px 20px 30px;
     }
+
     .art-slide {
         flex: 0 0 260px;
         height: 100%;
         min-height: auto;
     }
+
     .card-info {
         flex: 1.2;
         overflow-y: auto;
     }
+
     footer {
+        width: auto;
+        padding: 0;
         position: absolute;
         bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
-        padding: 0;
-        width: auto;
     }
 }
 
@@ -234,31 +270,39 @@ footer p {
         font-size: 1.4rem;
         margin: 30px 0 5px 40px;
     }
+
     .swipe-hint {
         padding-right: 35px;
         font-size: 13px;
         margin-bottom: 5px;
     }
+
     .slider-container {
         height: 75vh;
         gap: 20px;
         padding: 0 40px 30px 40px;
     }
+
     .art-slide {
         flex: 0 0 295px;
     }
+
     .art-slide:hover {
         transform: translateY(-5px);
     }
+
     .card-info h3 {
         font-size: 1.45rem;
     }
+
     .card-info ul li {
         font-size: 0.82rem;
     }
+
     .card-examples h3 {
         font-size: 1.3rem;
     }
+    
     footer p {
         font-size: 0.8rem;
     }
